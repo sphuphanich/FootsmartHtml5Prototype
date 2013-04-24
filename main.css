@@ -1,0 +1,909 @@
+body {
+  background: #DADADA;
+}
+
+a, a:link, a:visited, a:hover, a:active
+{
+    color:#193972;
+    text-decoration:underline;
+    font-family:Arial, Helvetica, Sans-Serif;
+}
+
+label {
+font-weight: bold;
+margin-right: 10px;
+}
+
+.m10t  { margin-top: 10px; }
+.m10b { margin-bottom: 10px; }
+.alt { display: none; }
+.bold { font-weight: bold; }
+
+.left { float: left; }
+.right { float: right; }
+
+/*
+ * Site Navigation
+ *****************************************************************************/
+ 
+#topNavigation {
+	float: left;
+    border-collapse: collapse;
+    display: table;
+    width: 960px;
+	clear: both;
+	margin-top: 10px;
+}
+
+#topNavigation ul {
+	/*display: table-row;*/
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+	position: relative;
+}
+
+#topNavigation ul li.navListItem {
+    margin: 0;
+    padding: 0;	
+	height: 31px;
+	background: url('http://www.footsmart.com/Images/common-sprite2.png') no-repeat -277px -533px;
+    color: #1C356E;
+	border-right: 1px solid #d7d5d4;	
+    display: table-cell;	
+	z-index: 10;
+	float: left;
+	box-sizing: padding-box;
+	-moz-box-sizing: border-box;
+}
+
+#topNavigation ul li.navListItem:hover {
+	background-position: -277px -566px;
+	
+}
+
+#topNavigation #hrefNA:hover {
+	border-left: 1px solid #193972;
+}
+
+#topNavigation ul li.navListItem:hover a.topNavLink {
+	color: #fff;
+}
+
+#topNavigation ul li.navListItem:hover .menu {
+	opacity: 1;
+	top: -4px;
+	transition: opacity 0.4s .4s ease, top .4s;
+	-moz-transition: opacity 0.4s .4s ease, top .4s; /* Firefox 4 */
+	-webkit-transition: opacity 0.4s .4s ease, top .4s; /* Safari and Chrome */
+	-o-transition: opacity 0.4s .4s ease, top .4s; /* Opera */
+}
+
+#topNavigation ul li#hrefCT:hover .menu {
+	top: 36px;
+	right: 0;
+}
+
+#topNavigation ul li#hrefC {
+    border-right: none;
+}  
+
+#topNavigation ul li#hrefC:hover {
+    background-position: -169px -497px;
+}   
+
+#topNavigation ul li#hrefCT {
+    border: none;
+    margin-top: -5px;
+    height: 41px;
+	width: 119px;
+    background: url('http://www.footsmart.com/images/common-sprite2.png') no-repeat;
+    background-position: -438px -264px;
+}
+
+#topNavigation ul li#hrefCT:hover {
+	background-position: -438px -306px;
+}
+
+#topNavigation #hrefNA {
+	border-left: 1px solid #d7d5d4;
+}
+
+#topNavigation .menuWrapper {
+	position: absolute;	
+	width: 960px;
+	left: 0;	
+	*top: 30px;
+	*left: 0;	
+}
+
+#topNavigation .menu {
+	position: absolute;
+	top: -9999px;
+	opacity: 0;
+	padding: 18px 18px;
+	border: 5px #193972 solid;
+	z-index: 20;
+	width: 914px;	
+    height: 380px;
+    min-height:340px;
+	background: #fff;
+	-moz-box-shadow: 5px 5px 5px #afafaf;
+	-webkit-box-shadow: 5px 5px 5px #afafaf;
+	box-shadow: 5px 5px 5px #afafaf;
+    _top: 1px;
+	transition: opacity 0.2s 0 ease;
+	-moz-transition: opacity 0.2s 0 ease; /* Firefox 4 */
+	-webkit-transition: opacity 0.2s 0 ease; /* Safari and Chrome */
+	-o-transition: opacity 0.2s 0 ease; /* Opera */
+}
+
+#topNavigation .ieShadow {
+    display: none; /* don't show in non-ie browsers */
+}
+
+#topNavigation .menuDivider {
+	width: 1px; 
+	top: 27%; 
+	bottom: 27%; 
+	right: 0px; 
+	background-color: #fff; 
+	overflow: hidden; 
+	position: absolute; 
+	z-index: 10;
+	display: none;
+}
+
+#topNavigation .menuSale {
+	border: 5px #990000 solid;
+    padding: 0 0 35px 0;
+    height: 291px;
+    min-height: 291px;
+}
+
+#topNavigation .menuSale .menuList {
+    margin: 10px 0 10px 20px;
+    width: 160px;
+    height: 100px;
+}
+#topNavigation .menuSale .menuCol {
+    width: 180px;
+    border-right: 1px solid #adadad;
+}
+
+#topNavigation .menuSale .menuFooter {
+    margin: 0 0 0 20px;
+    width: 160px;
+    height: 100px;
+}
+
+#topNavigation #hrefC .menu {
+	width: 543px;
+	right: 0;
+}
+
+#topNavigation .menuCT {	
+	border: 5px #47240b solid;
+	padding: 0px 0px;
+	width: 579px;
+	height: 339px;
+}
+
+#topNavigation li a.topNavLink {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #193972;
+    display: block;
+    padding: 6px 18px 9px 18px;
+    text-align: center;
+    text-decoration: none;
+	position: relative;
+	z-index: 10;	
+}
+
+#topNavigation li a:hover {
+    text-decoration: none;
+}
+
+#topNavigation .menu a {
+	padding: 0;
+	 color: #050505;
+	 width: auto !important;
+	background: #fff;
+    _line-height: 13px;
+}
+
+#topNavigation .menuCol {
+	float: left;
+	font: bold 11px Arial,sans-serif !important;
+	text-align: left;
+    padding: 0 0 0 0;
+    width: 220px;
+}
+
+#topNavigation .menuColCSB {
+    padding: 0 0 20px 0;
+}
+
+#topNavigation .menuColCSB div  {
+    *overflow: hidden;
+}
+
+
+#topNavigation .menuColHeader {
+	clear: both;
+	font-size: 15px;
+    font-weight: bold;
+	padding: 0 0 0 0;
+	margin: 0 0 5px 0;
+    border-bottom: 1px solid #d2d2d1;
+    white-space: nowrap;
+}
+
+#topNavigation #Div4 .menuCol .menuColHeader, #topNavigation #Div5 .menuCol .menuColHeader {
+    margin:0;
+}
+
+
+
+#topNavigation .menuColHeaderSale {
+    border-bottom: 1px solid #ADADAD;
+}
+
+#topNavigation .menuColSubheaderSale {
+	font-size: 12px;
+	color: #9b2c22;
+	background: url('/Images/Endeca/dotted_horizontal.gif') 50% 100% repeat-x;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+}
+
+#topNavigation .menuColProductHeader {
+	clear: both;
+	font-size: 12px;
+	padding: 0 0 2px 0;
+	text-align: center;
+	background: url('/Images/Endeca/dotted_horizontal.gif') 50% 100% repeat-x;
+}
+
+#topNavigation .menuColDivider {
+	float: left;
+	width: 1px;
+	margin: 17px 11px 0 11px;
+	height: 220px;
+}
+
+#topNavigation .menuColDividerSale {
+	float: left;
+	width: 1px;
+	background: url('/Images/Endeca/dotted_vertical.gif') 50% 100% repeat-y;
+	margin: 50px 20px 0 20px;
+	height: 180px;
+}
+
+#topNavigation .menuList {
+	float: left;
+	color: #0a0a0a;
+	margin: 0 0 10px 0;
+    width: 100%;    
+    _width: auto;
+    position: relative;
+}
+
+#topNavigation .menuList .wraps2lines a {
+    padding-top:3px;
+    padding-bottom:3px;
+    display:inline-block;
+    line-height: 14px;
+}
+
+	
+#topNavigation .menuItem, #topNavigation .menuItem a, #topNavigation .menuItemListItem, #topNavigation .menuItemListItem a {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 23px;
+	font-weight: normal;
+	font-size: 12px;
+	text-decoration: none;
+	padding: 0;
+	text-align: left;
+	font:Arial, Helvetica, sans-serif !important;
+    width: 100%;
+    /*_width: 130px !important;*/
+}
+
+#topNavigation .menuItemShopAll a {
+    font-weight: bold;
+    color: #1C356E;
+    text-align: left;
+    padding-left: 5px;
+}
+
+#topNavigation .menuList .menuItem.firstEntry {
+    z-index: 30;
+}
+
+#topNavigation .menuList .menuItem.firstEntry a {
+    background: #e8e8e8 url('/Images/arrow-nav-menu-active.png') no-repeat 165px center;
+    border: 1px #d2d2d1 solid; 
+    border-right: none; 
+    border-top: none; 
+    /*padding-top:3px;*/
+    z-index: 30;
+}
+
+#topNavigation .menuList .menuItem a {
+    width: 160px;
+    /*_width: auto;*/
+    *padding-top: 5px;
+    *padding-bottom: 5px;
+    *line-height: 13px;
+    padding-left:5px;
+}
+
+#topNavigation .menuItemList {
+    width: 171px;
+    _width: 173px;
+    height: 323px;
+    /*_height: 312px;*/
+    /*padding: 4px 0;*/
+    position: absolute;
+    top: 0;
+    /* left: 177px;*/
+    left: 185px;
+    line-height: 23px;
+    background: #e8e8e8;
+    border: 1px solid #d2d2d1;
+    border-top:none;
+    display:none;
+    z-index: 20;
+}
+
+#topNavigation .menuItemList a {
+    background: #e8e8e8;
+}
+
+#topNavigation .menuItemList .menuItemListItem a {
+    width: 166px !important;
+    _width: 172px !important;    
+    text-align: left;
+    padding-left: 5px;
+    line-height: 25px;
+    /*
+    _padding-top: 5px;
+    _padding-bottom: 5px;
+    */
+}
+
+#topNavigation.linkHover .menuItem a:hover {  
+    background: #193972;
+    color: #fff;
+}
+
+#topNavigation.linkHover .menuItemList a:hover {  
+    background: #193972;
+    color: #fff;
+}
+
+#topNavigation .menuItem.hasSubitems a {
+    background: #fff url('/Images/arrow-nav-menu.png') no-repeat 165px center;
+    width: 180px !important;
+    _width: 185px !important;
+    padding-left: 5px;
+    border: 1px solid #fff;
+    border-right: none;
+}
+
+#topNavigation.linkHover .menuItem.hasSubitems a:hover {    
+    color: #262520;
+    background: #e8e8e8 url("/Images/arrow-nav-menu-active.png") no-repeat 165px center;
+}
+
+#topNavigation .menuProduct {
+	text-align: center;	
+}
+
+#topNavigation .menuProductPicture {
+	margin: 0 0 4px 0;	
+}
+
+#topNavigation .menuProductDesc {
+	font-size: 12px;	
+	margin: 0 10px 4px 10px;
+}
+
+#topNavigation .menuProductDesc a {
+	font-size: 12px;	
+	margin: 0 10px 4px 10px;
+	color:#193972;
+}
+
+#topNavigation .menuProductPrice {
+	font-size: 12px;	
+	font-weight: bold;
+	color: #000;
+	margin: 0 0 5px 0;
+}
+
+#topNavigation .menuFooter {
+	clear: both;
+	margin: 5px 0;
+	color: #1C356E;
+	font-weight: bold;
+}
+
+#topNavigation .menuFooterImage {
+	float: left;
+	margin: -2px 0 0 2px;
+}
+
+#topNavigation .menuFooterText {
+	float: left;
+    margin: 0 0 10px 0;
+}
+
+#topNavigation .menuFooterText a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 0;
+	color: #1C356E;
+	font-weight: bold;
+    padding-left: 5px;
+}
+
+#topNavigation .menuFooterText a:hover, #topNavigation .menuProductDesc a:hover {
+	text-decoration: underline;
+    padding-left: 5px;
+}
+
+#topNavigation .bold {
+	font-weight: bold;
+}
+
+#megaMenu div.cs-Mega h2 {
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	color: #1c356e;
+	text-align: left;
+	border-bottom: #d2d2d1 solid 1px;
+	padding: 0;
+	margin: 0;
+	line-height: 18px;
+}
+
+/* END TOP NAVIGATION */
+
+#topLinks {
+text-align: right;
+color: #BBB;
+padding: 10px 0;
+word-spacing: 4px;
+margin: 0;
+}
+
+#topLinks a {
+	color: #193972;
+	font-size: 12px;
+	text-decoration: none;
+	word-spacing: normal;
+	font-weight: normal;
+}
+
+#topLinks span {
+	color: #193972;
+	word-spacing: normal;
+	font-size: 12px;
+}
+
+.topNavLeft a.cobrandfs {
+width: 177px;
+height: 26px; 
+background: url('http://www.footsmart.com/images/common-sprite2.png') no-repeat 0 -155px;
+display: block;
+float: left;
+}
+
+.topNavLeft span.space {
+width: 14px;
+height: 28px;
+background: url('http://www.footsmart.com/images/common-sprite2.png') no-repeat -177px -156px;
+display: block;
+float: left;
+}
+
+.topNavLeft a.cobrandct {
+width: 158px;
+height: 29px;
+background: url('http://www.footsmart.com/images/common-sprite2.png') no-repeat -191px -156px;
+display: block;
+float: left;
+}
+
+.fscart, .ctcart {
+background: url('http://www.footsmart.com/images/common-sprite2.png') no-repeat;
+height: 22px;
+width: 23px;
+background-position: -141px -38px;
+display: block;
+float: left;
+}
+
+.ctcart {
+background-position: -166px -38px;
+display: none;
+}
+
+#cartLink {
+	display: inline-block;
+	margin: 5px 0 0 5px;
+}
+
+a.topnavlink {
+	text-align: center;
+	font-weight: bold;
+	color: #193972;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#searchBar { float: right; }
+
+#oldMenu .tbNavSearch {
+width: 205px;
+font-size: 12px;
+border: solid 2px #539c27;
+background: #FFFFFF url(/images/searchback.jpg) repeat-x top;
+padding: 1px;
+float: left;
+height: 18px;
+line-height: 18px;
+}
+
+#oldMenu #searchLinkButton {
+width: 75px;
+height: 24px;
+background-position: 0 -70px;
+}
+
+#oldMenu .searchbutton {
+text-decoration: none;
+float: left;
+display: block;
+}
+
+.sprite {
+background: url('http://www.footsmart.com/images/common-sprite2.png') no-repeat;
+display: block;
+}
+
+
+/* Stars Styles */
+
+div.starsDiv
+{
+	position: relative;
+    margin-left: 38px;
+    margin-top: 5px;
+    height: 13px;
+    text-align: left;
+}
+
+div.starsDiv div.backgroundStarsEmpty
+{
+	background-image:url('http://www.footsmart.com/images/stars_on_off-new.gif');
+	background-position:0px 0px;
+	width:100px;
+	height:13px;
+}
+
+div.starsDiv div.backgroundStars1,
+div.starsDiv div.backgroundStars100,
+div.starsDiv div.backgroundStars120,
+div.starsDiv div.backgroundStars140,
+div.starsDiv div.backgroundStars160,
+div.starsDiv div.backgroundStars180,
+div.starsDiv div.backgroundStars2,
+div.starsDiv div.backgroundStars200,
+div.starsDiv div.backgroundStars220,
+div.starsDiv div.backgroundStars240,
+div.starsDiv div.backgroundStars260,
+div.starsDiv div.backgroundStars280,
+div.starsDiv div.backgroundStars3,
+div.starsDiv div.backgroundStars300,
+div.starsDiv div.backgroundStars320,
+div.starsDiv div.backgroundStars340,
+div.starsDiv div.backgroundStars360,
+div.starsDiv div.backgroundStars380,
+div.starsDiv div.backgroundStars4,
+div.starsDiv div.backgroundStars400,
+div.starsDiv div.backgroundStars420,
+div.starsDiv div.backgroundStars440,
+div.starsDiv div.backgroundStars460,
+div.starsDiv div.backgroundStars480,
+div.starsDiv div.backgroundStars5,
+div.starsDiv div.backgroundStars500,
+div.starsDiv div.StarRating
+{
+	background-image:url('http://www.footsmart.com/images/stars_on_off-new.gif');
+	background-position:0px 13px;
+	position:absolute;
+	height:13px;
+	top:0px;
+	left:0px;
+}
+
+div.starsDiv div.backgroundStars1, div.starsDiv div.backgroundStars100 { width:18px; }
+div.starsDiv div.backgroundStars120 { width:21px; }
+div.starsDiv div.backgroundStars140 { width:24px; }
+div.starsDiv div.backgroundStars160 { width:27px; }
+div.starsDiv div.backgroundStars180 { width:30px; }
+div.starsDiv div.backgroundStars2, div.starsDiv div.backgroundStars200 { width:36px; }
+div.starsDiv div.backgroundStars220 { width:39px; }
+div.starsDiv div.backgroundStars240 { width:41px; }
+div.starsDiv div.backgroundStars260 { width:44px; }
+div.starsDiv div.backgroundStars280 { width:47px; }
+div.starsDiv div.backgroundStars3,  div.starsDiv div.backgroundStars300 { width:54px; }
+div.starsDiv div.backgroundStars320 { width:57px; }
+div.starsDiv div.backgroundStars340 { width:60px; }
+div.starsDiv div.backgroundStars360 { width:63px; }
+div.starsDiv div.backgroundStars380 { width:66px; }
+div.starsDiv div.backgroundStars4, div.starsDiv div.backgroundStars400 { width:72px; }
+div.starsDiv div.backgroundStars420 { width:75px; }
+div.starsDiv div.backgroundStars440 { width:78px; }
+div.starsDiv div.backgroundStars460 { width:81px; }
+div.starsDiv div.backgroundStars480 { width:84px; }
+div.starsDiv div.backgroundStars5, div.starsDiv div.backgroundStars500  { width:100px; }
+
+
+
+ul.ratingStars,
+.ratingBoldText,
+.ratingBoldTextBlack,
+.ratingBoldTextBlackSmall,
+.ratingBoldTextGray,
+.ratingBoldTextBlue,
+.ratingBoldTextBlueSmall
+{
+	text-align:left;
+	font-size:12px;
+	font-weight:bold;
+	color:black;
+}
+
+ul.ratingStars li {
+	padding-right: 10px;
+	float: left;
+}
+
+/* Footer Styles */
+
+.footer-fs, .footer-ct {
+	background: url('/assets/footerSignupBg.png') no-repeat;
+	height: 55px;
+	font-size: 15px;
+	color: #000;
+}
+
+.footer-fs .signup, .footer-ct .signup {
+	padding: 17px 92px 0 42px;
+	float: left;
+}
+
+.footer-fs div.envelope {
+	background: url('http://www.footsmart.com/images/common-sprite2.png') no-repeat -159px -226px;
+	height: 23px;
+	width: 31px;
+	float: left;
+}
+
+.footer-fs p, .footer-ct p {
+	float: left;
+	margin: 0;
+	padding: 3px 9px 0 5px;
+	font-size: 12px;
+}
+
+.footer-fs .signup p.ct {
+	display: none;
+}
+
+.footer-fs input, .footer-ct input {
+	height: 14px;
+	padding-left: 4px;
+	font-size: 11px;
+	width: 160px;
+}
+#newsletterSignup {
+	float: left;
+}
+
+.footer-fs input#textNewsletterSignup {
+	float: left;
+}
+
+.footer-fs a#newsletterSignUpButton {
+	background: url('http://www.footsmart.com/images/common-sprite2.png') no-repeat -128px -189px;
+	width: 30px;
+	height: 24px;
+	float: left;
+}
+
+.footer-fs .connect, .footer-ct .connect {
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	padding: 7px 90px 0 0;
+	width: 143px;
+}
+
+.footer-fs .connect a.facebook {
+	background: url('http://www.footsmart.com/images/common-sprite2.png');
+	display: block;
+	float: left;
+	height: 26px;
+	width: 26px;
+	width: 25px;
+	background-position: 0 -188px;
+}
+
+.footer-fs .connect a.twitter {
+	background: url('http://www.footsmart.com/images/common-sprite2.png');
+	display: block;
+	float: left;
+	height: 26px;
+	width: 26px;
+	background-position: -26px -188px;
+	margin: 0 6px;
+}
+
+.footer-fs .connect a.pinterest {
+	background: url('http://www.footsmart.com/images/common-sprite2.png');
+	display: block;
+	float: left;
+	height: 26px;
+	width: 26px;
+	background-position: -53px -188px;
+	margin: 0 7px 0 0;
+}
+
+.footer-fs .connect a.blog {
+	background: url('http://www.footsmart.com/images/common-sprite2.png');
+	display: block;
+	float: left;
+	height: 29px;
+	width: 47px;
+	background-position: -80px -188px;
+}
+
+.footer-fs .mobile, footer-ct .mobile {
+	padding: 10px 0 0 0;
+	float: left;
+}
+
+.footer-fs .mobile a {
+	float: left;
+	height: 20px;
+	background: url('http://www.footsmart.com/images/common-sprite2.png') -159px -184px;
+	width: auto;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+	padding: 16px 0 0 39px;
+}
+
+
+
+#paymentLinks  {
+	height: 80px;
+	border-right: 1px solid #D8D8D8;
+}
+
+.footerSection {
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	padding: 28px 0 14px 0;
+}
+
+.footerSection ul {
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footerSection li {
+	padding-left: 5px;
+	float: left;
+}
+
+#visaPayment {
+	width: 41px;
+	height: 27px;
+	background-position: 0 0;
+}
+
+#amexPayment {
+	width: 41px;
+	height: 27px;
+	background-position: -46px 0;
+}
+
+#mstrPayment {
+	width: 41px;
+	height: 27px;
+	background-position: -91px 0;
+}
+
+#discPayment {
+	width: 41px;
+	height: 27px;
+	background-position: -135px 0;
+}
+
+#paypPayment {
+	width: 41px;
+	height: 27px;
+	background-position: -180px 0;
+}
+
+#blmlPayment {
+	width: 41px;
+	height: 27px;
+	background-position: -225px 0;
+}
+
+#bbbLogo {
+	width: 66px;
+	height: 33px;
+	background-position: -203px -38px;
+}
+
+.footerCopyright {
+	font-size: 11px;
+	font-family: Arial;
+	color: #3c3c3c;
+	text-align: left;
+	margin-top: 15px;
+	padding-bottom: 21px;
+	float: left;
+	width: 100%;
+}
+
+.footerCopyright a {
+	color: #3c3c3c;
+	text-decoration: underline;
+	font-size: 11px;
+}
+
+.footerCopyright #checkoutLinks { display: none }
+
+.nortonIconFooter img {
+	width: 74px;
+	height: 53px;
+}
+
+.globalFooter a {
+	color: #262520;
+	text-decoration: none;
+	display: block;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
